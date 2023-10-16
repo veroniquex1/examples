@@ -1,0 +1,29 @@
+/*Best practice to use external style sheet
+body{
+    text-align: center;
+}
+.container{
+    background-color: darkblue;
+}
+.container p{
+    color: white;
+
+}
+*/
+*,
+*::after
+*::before{
+    margin: 0;
+}
+/*Box sizing*/
+#box1{
+    width: 150px;
+    background-color: greenyellow;
+    color: white;
+    box-sizing: content-box;
+}
+#box2{
+    width: 300px;
+    background-color: darkgrey;
+    box-sizing: border-box;
+}
