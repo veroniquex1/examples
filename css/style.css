@@ -38,6 +38,7 @@ When grouping selectors use (updated css), this allows you to add id's at a late
 }
 
 */
+/* 
 #box1{
     width: 150px;
     background-color: green;
@@ -52,4 +53,32 @@ When grouping selectors use (updated css), this allows you to add id's at a late
     box-sizing: border-box;
     margin: 10px;
     padding: 10px;
+}*/
+
+/*anchor tag
+pseudo class: relates to the behavior of an element
+a:active, a:hover{
+    text-decoration: underline;
+    background-color: darkgrey;
+}*/
+/*pseudo element: relates to the features of the elements
+.wrapper p::first-letter{
+    font-size: 2.8rem;
+    font-weight: bolder;
+    color: red;
+}
+.wrapper p::first-line{
+    color: indigo;
+    font-weight: bolder;
+}*/
+section:first-child{
+    background-color: yellow;
+    color: black;
+}
+
+/*Custom variables*/
+:root{
+    --primaryColor: rgba(0,0,0);
+    --secondaryColor:white;
+    --alternative: rgba(50, 85, 155, 0.7);
 }
