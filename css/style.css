@@ -1,0 +1,84 @@
+/*Best practice to use external style sheet
+body{
+    text-align: center;
+}
+.container{
+    background-color: darkblue;
+}
+.container p{
+    color: white;
+
+}
+*/
+*,
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Box sizing
+
+content box: doesnt include margin with the width size e.g 150px + 20px
+border box: the width includes the margin. You then subtract the margin amount from the width
+
+margin: top right bottom left
+margin: top&bottom right&left
+margin: top (right&left) bottom
+margin: all
+
+pseudo class has 1 :
+pseudo element has 2 ::
+
+When grouping selectors use (updated css), this allows you to add id's at a later stage:
+
+:is(#box1, #box2){
+    border: 2px dotted;
+    border-radius: 20px;
+}
+
+*/
+/* 
+#box1{
+    width: 150px;
+    background-color: green;
+    color: white;
+    box-sizing: content-box;
+    margin: 20px;
+    padding: 20px;
+}
+#box2{
+    width: 300px;
+    background-color: darkgrey;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+}*/
+
+/*anchor tag
+pseudo class: relates to the behavior of an element
+a:active, a:hover{
+    text-decoration: underline;
+    background-color: darkgrey;
+}*/
+/*pseudo element: relates to the features of the elements
+.wrapper p::first-letter{
+    font-size: 2.8rem;
+    font-weight: bolder;
+    color: red;
+}
+.wrapper p::first-line{
+    color: indigo;
+    font-weight: bolder;
+}*/
+section:first-child{
+    background-color: yellow;
+    color: black;
+}
+
+/*Custom variables*/
+:root{
+    --primaryColor: rgba(0,0,0);
+    --secondaryColor:white;
+    --alternative: rgba(50, 85, 155, 0.7);
+}
